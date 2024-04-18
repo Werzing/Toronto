@@ -9,13 +9,13 @@
 <style>
 @font-face {
   font-family:"intro";
-  src: url(assets\fonts/intro.otf);
+  src: url(assets/fonts/Intro.otf);
 }
 
 *{
   margin: 0;
   padding: 0;
-  font-family: "intro";
+  font-family: 'intro';
   text-shadow: 1px 2px 2px rgb(0, 0, 0);
   box-sizing: border-box;
 }
