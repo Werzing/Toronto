@@ -1,0 +1,93 @@
+<template>
+    <div class="content">
+        <div class="matte" :style="{ backgroundImage: `url(/img/${bg})`}">
+            <div class="wrap">
+                <div class="wrap__content">
+                    <slot name="img"></slot>
+
+
+                    <slot name="text"></slot>
+                </div>
+
+                <div class="wrap__content2">
+                    <slot name="video"></slot>
+                    <slot name="video-text"></slot>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</template>
+
+
+<style scoped>
+
+.wrap__content2{
+    display: flex; align-items: center; justify-content: space-between; flex-direction: row-reverse; width: 100%; height: 100%;
+}
+
+
+*{
+    color: white;
+}
+.content {
+    width: 100vw;
+    position: relative;
+}
+
+
+.wrap {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.wrap__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 32px;
+    width: 100%;
+}
+
+
+.matte {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position-y: center;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding:40px 0;
+}
+
+
+
+ .matte:before {
+    position: absolute;
+    content: '';
+    background: inherit;
+    left:  -1px;
+    right: 0px;
+    top: 0px;
+    bottom: 0;
+    filter: blur(15px);
+    border-radius: 15px;
+    z-index: -1;
+} 
+</style>
+
+
+
+<script>
+export default {
+    props: ['bg']
+}
+
+</script>
