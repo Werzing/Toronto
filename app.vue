@@ -9,7 +9,7 @@
 <style>
 @font-face {
   font-family:"intro";
-  src: url(assets/fonts/intro.otf);
+  src: url(assets\fonts/intro.otf);
 }
 
 *{
