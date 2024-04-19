@@ -280,6 +280,8 @@
     }
 
     .nav {
+        width: 90%;
+        height: 20%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -287,6 +289,14 @@
 
     .nav__list {
         list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    a{
+        text-decoration: none;
     }
 
     .play {
@@ -323,7 +333,7 @@
     }
 
     .bottom__link {
-        width: 40%;
+        width: 50%;
     }
 
     .bottom__img {
