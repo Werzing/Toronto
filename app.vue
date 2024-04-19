@@ -13,7 +13,7 @@
 }
 
 body{
-  background-color: rgba(44, 44, 44, 0.705);
+  background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
 }
 
 *{
