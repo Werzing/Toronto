@@ -5,6 +5,7 @@
     <img src="/video/cat.gif" alt="" class="preloader__cat">
   </div>
 
+
   <nav class="navbar_scrolled nav">
     <div class="logo-box">
       <div class="logo">
@@ -54,7 +55,6 @@ nav a {
 }
 
 .preloader {
-  z-index: -999999999999999999999999999999999;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
@@ -62,6 +62,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -999999999999999999;
 }
 
 
