@@ -4,12 +4,12 @@
 
 
 
-            <div class="vidio">
+        <div class="vidio">
 
-                <slot name="vidioBg">
+            <slot name="vidioBg">
 
-                </slot>
-            </div>
+            </slot>
+        </div>
 
 
         <div class="Fon">
@@ -45,7 +45,7 @@
                 <div class="middle">
                     <img class="middle-img" src="/img/OW2_Primary_Logo-wide.png" alt="" width="50%">
                     <div>
-                        <h1>Играй бесплатно</h1>
+                        <h1 class="play-free">Играй бесплатно</h1>
                     </div>
                 </div>
 
@@ -254,7 +254,7 @@
         width: 100vw;
         height: 100vh;
         background-color: #ff66003a;
-        background-image: url(public/img/moobail/mobailBg.jpg);
+        background-image: url(/img/moobail/mobailBg.jpg);
         background-size: cover;
         position: relative;
     }
@@ -263,13 +263,13 @@
         display: none;
     }
 
-    .Fon{
+    .Fon {
         width: 100vw;
         height: 100vh;
         background-color: #02023b33;
     }
 
-    .wrap{
+    .wrap {
         width: 350px;
         height: 100%;
         margin: 0 auto;
@@ -279,33 +279,42 @@
         justify-content: space-between;
     }
 
-    .nav{
+    .nav {
         display: flex;
-        align-items:center ;
+        align-items: center;
         justify-content: space-between;
     }
 
-    .nav__list{
+    .nav__list {
         list-style: none;
     }
-    .play{
+
+    .play {
         background-color: #ff6400;
         border: none;
         padding: 10px 15px;
         border-radius: 4px;
     }
 
-    .logo-logo{
+    .logo-logo {
         width: 90%;
     }
 
-    .middle{
-        width: 100%;
+    .middle {
+        width: 180%;
+        height: 10%;
         display: flex;
-        align-items: center;flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
-    .bottom{
+
+    .play-free {
+        font-size: 15pt;
+    }
+
+    .bottom {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -313,11 +322,11 @@
         justify-content: center;
     }
 
-    .bottom__link{
+    .bottom__link {
         width: 40%;
     }
 
-    .bottom__img{
+    .bottom__img {
         width: 90%;
     }
 
