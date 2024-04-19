@@ -50,8 +50,9 @@
 
 
     .wrap {
-        width: 1500px;
+        width: 1700px;
         margin: 0 auto;
+        padding: 100px 0;
     }
 
     .wrap__content {
@@ -115,6 +116,7 @@
 
     .wrap {
         width: 350px;
+        padding: 80px 0;
         margin: 0 auto;
     }
 
@@ -133,7 +135,7 @@
         width: 100%;
         background-size: cover;
         position: relative;
-        background-position-y: center;
+        background-position: center;
         z-index: 10;
         display: flex;
         align-items: center;

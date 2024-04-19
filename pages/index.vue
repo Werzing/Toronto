@@ -117,6 +117,7 @@
 .video {
   width: 50%;
   border-radius: 30px;
+  border: 4px solid rgb(190, 190, 190);
 }
 
 .wrap2 {
@@ -134,7 +135,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 40%;
+  width: 45%;
 }
 
 
@@ -192,5 +193,16 @@
   width: 100%;
   padding: 120px 0;
 }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .video{
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+
 }
 </style>
