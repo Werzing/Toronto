@@ -1,6 +1,6 @@
 <template>
 
-  <div class="preloader" style="  width: 100vw;
+  <div class="preloader" style="width: 100vw;
   height: 100vh;
   background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
   position: absolute;

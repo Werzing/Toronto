@@ -12,6 +12,10 @@
   src: url(assets/fonts/Intro.otf);
 }
 
+body{
+  background-color: rgba(44, 44, 44, 0.705);
+}
+
 *{
   margin: 0;
   padding: 0;
