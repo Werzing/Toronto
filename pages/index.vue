@@ -107,7 +107,10 @@
 
 
 <style>
-.vidioBg{
+
+@media screen and (min-width: 1600px) {
+
+  .vidioBg{
   width: 100%;
 }
 
@@ -115,10 +118,6 @@
   width: 50%;
   border-radius: 30px;
 }
-@media screen and (min-width: 1600px) {
-
-
-
 
 .wrap2 {
   width: 1200px;
@@ -193,6 +192,5 @@
   width: 100%;
   padding: 120px 0;
 }
-
 }
 </style>

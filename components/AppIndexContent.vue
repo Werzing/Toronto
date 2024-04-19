@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-        <div class="matte" :style="{ backgroundImage: `url(/img/${bg})`}">
+        <div class="matte" :style="{ backgroundImage: `url(/img/${bg})` }">
             <div class="wrap">
                 <div class="wrap__content">
                     <slot name="img"></slot>
@@ -26,64 +26,135 @@
 
 
 <style scoped>
-*{
+* {
     color: white;
 }
 
 @media screen and (min-width: 1600px) {
 
-.wrap__content2{
-    display: flex; align-items: center; justify-content: space-between; flex-direction: row-reverse; width: 100%; height: 100%;
+    .wrap__content2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .content {
+        width: 100vw;
+        position: relative;
+    }
+
+
+    .wrap {
+        width: 1500px;
+        margin: 0 auto;
+    }
+
+    .wrap__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 32px;
+        width: 100%;
+    }
+
+
+    .matte {
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        background-position-y: center;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 40px 0;
+    }
+
+
+
+    .matte:before {
+        position: absolute;
+        content: '';
+        background: inherit;
+        left: -1px;
+        right: 0px;
+        top: 0px;
+        bottom: 0;
+        filter: blur(15px);
+        border-radius: 15px;
+        z-index: -1;
+    }
+
 }
 
 
 
-.content {
-    width: 100vw;
-    position: relative;
-}
+@media screen and (max-width: 900px) {
 
-
-.wrap {
-    width: 1500px;
-    margin: 0 auto;
-}
-
-.wrap__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    line-height: 32px;
-    width: 100%;
-}
-
-
-.matte {
-    width: 100%;
-    background-size: cover;
-    position: relative;
-    background-position-y: center;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding:40px 0;
-}
+    .wrap__content2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+    }
 
 
 
- .matte:before {
-    position: absolute;
-    content: '';
-    background: inherit;
-    left:  -1px;
-    right: 0px;
-    top: 0px;
-    bottom: 0;
-    filter: blur(15px);
-    border-radius: 15px;
-    z-index: -1;
-}
+    .content {
+        width: 100vw;
+        position: relative;
+    }
+
+
+    .wrap {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .wrap__content {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        line-height: 32px;
+        width: 100%;
+    }
+
+
+    .matte {
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        background-position-y: center;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 40px 0;
+    }
+
+
+
+    .matte:before {
+        position: absolute;
+        content: '';
+        background: inherit;
+        left: -1px;
+        right: 0px;
+        top: 0px;
+        bottom: 0;
+        filter: blur(15px);
+        border-radius: 15px;
+        z-index: -1;
+    }
 
 }
 </style>

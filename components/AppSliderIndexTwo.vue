@@ -143,4 +143,59 @@ p {
 }
 
 }
+
+
+@media screen and (max-width: 900px) {
+
+.div-swiper {
+    width: 90%;
+    height: 100%;
+    user-select: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 14px;
+}
+
+h2 {
+    font-size: 20pt;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 14pt;
+}
+
+.slider__text {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    flex-direction: column;
+    line-height: 25px
+}
+
+.slider__img {
+    width: 35%;
+    height: 75%;
+}
+
+}
+
 </style>

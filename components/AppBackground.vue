@@ -31,6 +31,26 @@
 }
 
 }
+
+
+@media screen and (max-width: 900px) {
+
+.darkeningOfTheBackground {
+    padding: 50px 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: #02023b36;
+
+}
+
+.bg{
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+}
 </style>
 
 

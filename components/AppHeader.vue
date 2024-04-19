@@ -292,9 +292,15 @@
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: column;
     }
+
+    .list__item{
+        padding: 3px 0;
+    }
+
+
     a{
         text-decoration: none;
     }
@@ -333,7 +339,7 @@
     }
 
     .bottom__link {
-        width: 50%;
+        width: 43%;
     }
 
     .bottom__img {
