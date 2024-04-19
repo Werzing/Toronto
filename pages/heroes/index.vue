@@ -1,6 +1,13 @@
 <template>
 
-  <div class="preloader">
+  <div class="preloader" style="  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -999999999999999999;">
 
     <img src="/video/cat.gif" alt="" class="preloader__cat">
   </div>
@@ -54,16 +61,6 @@ nav a {
   color: white;
 }
 
-.preloader {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -999999999999999999;
-}
 
 
 .preloader__cat {
