@@ -11,14 +11,11 @@
 
 
 <style scoped>
-
 *{
     color: white;
 }
 
-
-
-
+@media screen and (min-width: 1600px) {
 
 .darkeningOfTheBackground {
     height: 100%;
@@ -31,6 +28,8 @@
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed;
+}
+
 }
 </style>
 

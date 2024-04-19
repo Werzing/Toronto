@@ -1,33 +1,40 @@
 <template>
     <header class="header">
 
-        <div class="vidio">
 
-            <slot name="vidioBg">
 
-            </slot>
 
-        </div>
+            <div class="vidio">
 
+                <slot name="vidioBg">
+
+                </slot>
+            </div>
 
 
         <div class="Fon">
             <div class="wrap">
 
                 <nav id="nav" class="nav">
+
+
                     <div class="logo-box">
                         <div class="logo">
                             <a href="/">
-                                <img src="/img/Overwatch_2_logo-white-or.png">
+                                <img class="logo-logo" src="/img/Overwatch_2_logo-white-or.png">
                             </a>
                         </div>
                     </div>
+
+
+
                     <ul class="nav__list">
                         <li class="list__item" v-for="navigat in navigation" :key="navigat.id">
 
                             <NuxtLink :to="`${navigat.link}`">{{ navigat.title }}</NuxtLink>
                         </li>
                     </ul>
+
 
                     <a href="https://store.steampowered.com/app/2357570/Overwatch_2/"><button
                             class="play">Играть</button></a>
@@ -36,11 +43,12 @@
 
 
                 <div class="middle">
-                    <img src="/img/OW2_Primary_Logo-wide.png" alt="" width="50%">
+                    <img class="middle-img" src="/img/OW2_Primary_Logo-wide.png" alt="" width="50%">
                     <div>
                         <h1>Играй бесплатно</h1>
                     </div>
                 </div>
+
 
                 <div class="bottom">
                     <a class="bottom__link" :href="`${place.link}`" v-for="place in download" :key="place.id"><img
@@ -55,67 +63,7 @@
 
 
 
-
-
-
-
-
-
-
 <style scoped>
-
-
-.Fon{
-    width: 100%;
-    height: 100%;
-    background-color: #02023b33;
-
-}
-
-.vidio {
-    width: 100vw;
-    height: 90vh;
-    position: fixed;
-    background-color: #02023b3a;
-    z-index: -10;
-
-
-}
-
-
-.bottom__link {
-    width: 15%;
-}
-
-.bottom__img {
-    width: 100%;
-    transition: 200ms;
-}
-
-.bottom__img:hover {
-    transform: scale(110%);
-}
-
-
-h1 {
-    font-size: 25pt;
-}
-
-
-.play {
-    padding: 13px 25px;
-    background-color: #ff6400;
-    border: none;
-    border-radius: 2px;
-    font-size: 12pt;
-    cursor: pointer;
-    transition: 200ms;
-}
-
-.play:hover {
-    transform: scale(110%);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -123,139 +71,260 @@ h1 {
     color: white;
 }
 
-.header {
-    width: 100vw;
-    height: 90vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(2, 2, 59, 0.26);
-    z-index: 9999;
+@media screen and (min-width: 1600px) {
 
-}
+    .Fon {
+        width: 100%;
+        height: 100%;
+        background-color: #02023b33;
 
-.wrap {
-    height: 100%;
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    }
 
-}
-
-
-.middle {
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.bottom {
-    height: 16%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav {
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.logo-box {
-    float: left;
-    margin-left: 25px;
-    padding: 8px 0;
-
-}
-
-.logo {
-    margin: 0;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.nav,
-.nav__list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.nav__list {
-    width: 60%;
-    justify-content: space-around;
-}
-
-.list__item {
-    margin-right: 20px;
-    font-size: 14pt;
-    transition: 200ms;
-}
-
-.list__item:hover {
-    transform: scale(110%);
-}
-
-nav a {
-    text-decoration: none;
-}
-
-.middle {
-    width: 100%;
-    align-self: flex-end;
-    text-align: center;
-}
-
-.navbar_scrolled {
-    width: 100vw;
-    /* padding: 20px 0; */
-    position: fixed;
-    background-color: rgba(60, 71, 68, 0.976);
-    animation-name: fadeInUp;
-    animation-direction: 1s;
-    animation-fill-mode: none;
-    transition: 0.3s;
-    z-index: 9999;
-}
-
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        top: -50px;
+    .vidio {
+        width: 100vw;
+        height: 90vh;
+        position: fixed;
+        background-color: #02023b3a;
+        z-index: -10;
 
 
     }
 
-    100% {
-        opacity: 1;
-        top: 0px;
+
+    .bottom__link {
+        width: 15%;
     }
+
+    .bottom__img {
+        width: 100%;
+        transition: 200ms;
+    }
+
+    .bottom__img:hover {
+        transform: scale(110%);
+    }
+
+
+    h1 {
+        font-size: 25pt;
+    }
+
+
+    .play {
+        padding: 13px 25px;
+        background-color: #ff6400;
+        border: none;
+        border-radius: 2px;
+        font-size: 12pt;
+        cursor: pointer;
+        transition: 200ms;
+    }
+
+    .play:hover {
+        transform: scale(110%);
+    }
+
+    .header {
+        width: 100vw;
+        height: 90vh;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(2, 2, 59, 0.26);
+        z-index: 9999;
+
+    }
+
+    .wrap {
+        height: 100%;
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+    .middle {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bottom {
+        height: 16%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo-box {
+        float: left;
+        margin-left: 25px;
+        padding: 8px 0;
+
+    }
+
+    .logo {
+        margin: 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav,
+    .nav__list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .nav__list {
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    .list__item {
+        margin-right: 20px;
+        font-size: 14pt;
+        transition: 200ms;
+    }
+
+    .list__item:hover {
+        transform: scale(110%);
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    .middle {
+        width: 100%;
+        align-self: flex-end;
+        text-align: center;
+    }
+
+    .navbar_scrolled {
+        width: 100vw;
+        /* padding: 20px 0; */
+        position: fixed;
+        background-color: rgba(60, 71, 68, 0.976);
+        animation-name: fadeInUp;
+        animation-direction: 1s;
+        animation-fill-mode: none;
+        transition: 0.3s;
+        z-index: 9999;
+    }
+
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            top: -50px;
+
+
+        }
+
+        100% {
+            opacity: 1;
+            top: 0px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        width: 100vw;
+        height: 100vh;
+        background-color: #ff66003a;
+        background-image: url(public/img/moobail/mobailBg.jpg);
+        background-size: cover;
+        position: relative;
+    }
+
+    .vidio {
+        display: none;
+    }
+
+    .Fon{
+        width: 100vw;
+        height: 100vh;
+        background-color: #02023b33;
+    }
+
+    .wrap{
+        width: 350px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav{
+        display: flex;
+        align-items:center ;
+        justify-content: space-between;
+    }
+
+    .nav__list{
+        list-style: none;
+    }
+    .play{
+        background-color: #ff6400;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+    }
+
+    .logo-logo{
+        width: 90%;
+    }
+
+    .middle{
+        width: 100%;
+        display: flex;
+        align-items: center;flex-direction: column;
+    }
+
+    .bottom{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom__link{
+        width: 40%;
+    }
+
+    .bottom__img{
+        width: 90%;
+    }
+
+
 
 }
 </style>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -362,6 +431,3 @@ export default {
 
 }
 </script>
-
-
-

@@ -20,15 +20,19 @@
 
 
 <style>
+*{
+    color:white;
+}
+
+@media screen and (min-width: 1600px) {
+
 .bg{
     background-size: cover; 
     background-position: center; 
 }
 
-*{
-    color:white;
-}
 
+}
 </style>
 
 

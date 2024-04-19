@@ -9,7 +9,7 @@
     </div>
     <div class="wrap cards">
 
-      <NuxtLink class="heroe__card" :v-if="`${role}`=='Танк'" :class="`${heroe.id}`" :href="`/heroes/${heroe.id}`" v-for="heroe in heroes"
+      <NuxtLink class="heroe__card" :class="`${heroe.id}`" :href="`/heroes/${heroe.id}`" v-for="heroe in heroes"
         :key="heroe.id">
         <div class="heroe__img"><img :src="`${heroe.NameImg}`" alt=""></div>
         <div class="heroe__description"><img :src="`${heroe.RoleImg}`" alt=""> {{ heroe.name }}</div>
@@ -27,6 +27,8 @@
 
 
 <style scoped>
+
+@media screen and (min-width: 1600px) {
 
 .buttons-filter{
   padding: 15px;
@@ -99,6 +101,8 @@ ul {
   list-style: none;
   text-decoration: none;
   color: white;
+}
+
 }
 </style>
 

@@ -26,15 +26,18 @@
 
 
 <style scoped>
+*{
+    color: white;
+}
+
+@media screen and (min-width: 1600px) {
 
 .wrap__content2{
     display: flex; align-items: center; justify-content: space-between; flex-direction: row-reverse; width: 100%; height: 100%;
 }
 
 
-*{
-    color: white;
-}
+
 .content {
     width: 100vw;
     position: relative;
@@ -80,7 +83,9 @@
     filter: blur(15px);
     border-radius: 15px;
     z-index: -1;
-} 
+}
+
+}
 </style>
 
 

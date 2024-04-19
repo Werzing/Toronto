@@ -1,9 +1,8 @@
 <template>
 
-  <div style="z-index: -9999999999999999999; width: 100vw; height: 100vh;    background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
- position: absolute; display: flex; align-items: center; justify-content: center;">
+  <div class="preloader">
 
-    <img src="/video/cat.gif" alt="" style="width: 70px; height: 70px;">
+    <img src="/video/cat.gif" alt="" class="preloader__cat">
   </div>
 
   <nav class="navbar_scrolled nav">
@@ -36,20 +35,19 @@
 
       <template v-slot:description>
 
-        <div
-          style="display: flex; align-items: start; justify-content: center; flex-direction: column; padding: 280px 100px">
-          <div style="width: 50%;">
-            <h2 style="display: flex; align-items: center; font-size: 35px; margin-bottom:20px; ">
+        <div class="about">
+          <div class="about__text">
+            <h2 class="about__text-name">
               {{ heroe.name }}
             </h2>
 
-            <p style=" line-height: 35px; margin: 30px 0">
+            <p class="about__text-discription">
               {{ heroe.name }} — {{ heroe.description }}</p>
           </div>
-          <h3 style="display: flex; align-items: center;">
+          <h3 class="about__text-role">
             Роль:
             {{ heroe.role }}
-            <img style="padding: 20px; width: 70px;" :src="`${heroe.RoleImg}`" alt="">
+            <img class="about__text-helth" :src="`${heroe.RoleImg}`" alt="">
           </h3>
 
           <h3>
@@ -64,25 +62,21 @@
 
 
       <template v-slot:skils>
-        <div
-          style="width: 100vw;  display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 100px 0">
-          <h2 style="margin-bottom: 60px;">Способности</h2>
+        <div class="skils">
+          <h2 class="skils__text">Способности</h2>
 
-          <img style="width: 80%; border: 4px solid white; border-radius:10px; text-align: center;"
-            :src="`/img/heroes/${heroe.name}.png`" :alt="`Описание способностей: ${heroe.name}`">
+          <img class="skils__bloc" :src="`/img/heroes/${heroe.name}.png`" :alt="`Описание способностей: ${heroe.name}`">
         </div>
       </template>
     </AppHeroesDescription>
 
 
-    
     <AppFooter />
 
   </div>
 
 
-
-  <div v-else style="width: 100vw; height: 100vh; display: flex; align-items: end;">
+  <div v-else class="preloader__footer">
     <AppFooter />
 
   </div>
@@ -92,8 +86,83 @@
 
 
 <style scoped>
+@media screen and (min-width: 1600px) {
 
-.play {
+  .skils__bloc {
+    width: 80%;
+    border: 4px solid white;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .skils__text {
+    margin-bottom: 60px;
+  }
+
+  .skils {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0
+  }
+
+  .about__text-helth {
+    padding: 20px;
+    width: 70px;
+  }
+
+  .about__text-role {
+    display: flex;
+    align-items: center;
+  }
+
+  .about__text-discription {
+    line-height: 35px;
+    margin: 30px 0
+  }
+
+  .about__text-name {
+    font-size: 35px;
+  }
+
+  .about__text {
+    width: 50%;
+  }
+
+  .about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 280px 100px
+  }
+
+  .preloader {
+    z-index: -9999999999999999999;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .preloader__cat {
+    width: 70px;
+    height: 70px;
+  }
+
+  .preloader__footer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .play {
     padding: 13px 25px;
     background-color: #ff6400;
     border: none;
@@ -101,39 +170,39 @@
     font-size: 12pt;
     cursor: pointer;
     transition: 200ms;
-}
+  }
 
-.play:hover {
+  .play:hover {
     transform: scale(110%);
-}
+  }
 
-.navbar_scrolled {
-  width: 100vw;
-  /* padding: 20px 0; */
-  position: fixed;
-  background-color: rgba(60, 71, 68, 0.976);
-  animation-name: fadeInUp;
-  animation-direction: 1s;
-  animation-fill-mode: none;
-  transition: 0.3s;
-  z-index: 9999;
-}
+  .navbar_scrolled {
+    width: 100vw;
+    /* padding: 20px 0; */
+    position: fixed;
+    background-color: rgba(60, 71, 68, 0.976);
+    animation-name: fadeInUp;
+    animation-direction: 1s;
+    animation-fill-mode: none;
+    transition: 0.3s;
+    z-index: 9999;
+  }
 
 
-.nav {
+  .nav {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-}
+  }
 
-.logo-box {
+  .logo-box {
     float: left;
     margin-left: 25px;
     padding: 8px 0;
 
-}
+  }
 
-.logo {
+  .logo {
     margin: 0;
     height: 70px;
     display: flex;
@@ -141,36 +210,36 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-}
+  }
 
-.nav,
-.nav__list {
+  .nav,
+  .nav__list {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 
-}
+  }
 
-.nav__list {
+  .nav__list {
     width: 60%;
     justify-content: space-around;
-}
+  }
 
-.list__item {
+  .list__item {
     margin-right: 20px;
     font-size: 14pt;
     transition: 200ms;
-}
+  }
 
-.list__item:hover {
+  .list__item:hover {
     transform: scale(110%);
-}
+  }
 
-nav a {
+  nav a {
     text-decoration: none;
+  }
 }
-
 
 
 </style>
@@ -252,7 +321,7 @@ async function getCountries() {
 
 onMounted(() => {
   getCountries()
-  
+
 })
 
 </script>

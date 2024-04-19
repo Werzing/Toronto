@@ -28,10 +28,13 @@
 
 
 <style scoped>
-
 *{
     color: #8a8d98;
 }
+
+@media screen and (min-width: 1600px) {
+    
+
 
 ul,li,a{
     text-decoration: none;
@@ -112,6 +115,9 @@ ul,li,a{
 .wrap-left__logo__link__img{
     width:200%;
 }
+
+}
+
 
 </style>
 

@@ -91,8 +91,7 @@ export default {
 
 
 <style scoped>
-/* .slide{
-} */
+@media screen and (min-width: 1600px) {
 
 .div-swiper {
     width: 90%;
@@ -141,5 +140,7 @@ p {
 .slider__img {
     width: 35%;
     height: 75%;
+}
+
 }
 </style>

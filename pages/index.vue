@@ -107,17 +107,17 @@
 
 
 <style>
-
-
 .vidioBg{
   width: 100%;
 }
-
 
 .video {
   width: 50%;
   border-radius: 30px;
 }
+@media screen and (min-width: 1600px) {
+
+
 
 
 .wrap2 {
@@ -192,5 +192,7 @@
   flex-direction: column;
   width: 100%;
   padding: 120px 0;
+}
+
 }
 </style>
