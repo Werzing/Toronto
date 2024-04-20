@@ -158,6 +158,12 @@ nav a {
 }
 
 @media screen and (max-width: 900px) {
+
+  nav a {
+  text-decoration: none;
+  color: white;
+}
+
   
   .nav {
         width: 90%;
