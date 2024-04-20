@@ -2,11 +2,13 @@
     <div class="content">
         <div class="matte" :style="{ backgroundImage: `url(/img/${bg})` }">
             <div class="wrap">
-                <div class="wrap__content">
-                    <slot name="img"></slot>
+                    <div class="wrap__content">
+                        <slot name="img"></slot>
 
 
-                    <slot name="text"></slot>
+                        <slot name="text"></slot>
+
+
                 </div>
 
                 <div class="wrap__content2">
@@ -14,6 +16,7 @@
                     <slot name="video-text"></slot>
 
                 </div>
+               
             </div>
         </div>
 
@@ -99,11 +102,12 @@
 
     .wrap__content2 {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
         flex-direction: column-reverse;
-        width: 100%;
+        background: linear-gradient(90deg, rgba(18, 21, 36, 0.384) 0%, rgba(36, 42, 66, 0.384) 50%, rgba(18, 21, 36, 0.384) 100%), url(public/img/wrap__content2.jpg);
         text-align: center;
+        line-height: 26px;
+
+
     }
 
 
@@ -115,19 +119,15 @@
 
 
     .wrap {
-        width: 350px;
-        padding: 80px 0;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .wrap__content {
-        text-align: center;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
         flex-direction: column-reverse;
-        line-height: 32px;
-        width: 100%;
+        background: linear-gradient(90deg, rgba(18, 21, 36, 0.384) 0%, rgba(36, 42, 66, 0.384) 50%, rgba(18, 21, 36, 0.384) 100%), url(public/img/wrap__content.jpg);
+        text-align: center;
+        line-height: 26px;
     }
 
 
@@ -140,7 +140,6 @@
         display: flex;
         align-items: center;
         overflow: hidden;
-        padding: 40px 0;
     }
 
 

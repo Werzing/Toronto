@@ -147,55 +147,38 @@ p {
 
 @media screen and (max-width: 900px) {
 
-.div-swiper {
-    width: 90%;
-    height: 100%;
-    user-select: none;
-}
+    .div-swiper{
+        width: 90%;
+        height: 680px;
+        margin: 40px auto;
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
+    }
 
-.slider {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    margin-top: 40px;
-    background-color: rgba(0, 0, 0, 0.534);
-    border-radius: 14px;
-}
+    .swiper{
+        height: 100%;
+        margin: 0 auto;
+    }
 
-h2 {
-    font-size: 20pt;
-    width: 100%;
-    padding-bottom: 20px;
-}
+    .slide{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.534);
+        padding: 20px;
+        border-radius: 10px;
+    }
 
-p {
-    font-size: 14pt;
-}
-
-.slider__text {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: left;
-    flex-direction: column;
-    line-height: 25px
-}
-
-.slider__img {
-    width: 35%;
-    height: 75%;
-}
-
+    .slider{
+        width: 100%;
+    }
+    .slider__text{
+        width: 100%;
+        text-align: center;
+    }
+    .slider__img{
+        width: 80%;
+    }
+    .slider__text h2{
+        padding: 20px 0;
+    }
 }
 
 </style>

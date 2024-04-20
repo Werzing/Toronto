@@ -56,6 +56,10 @@
 
 
 <style scoped>
+
+
+@media screen and (min-width: 1600px) {
+  
 nav a {
   text-decoration: none;
   color: white;
@@ -149,6 +153,49 @@ nav a {
 
 .list__item:hover {
   transform: scale(110%);
+}
+
+}
+
+@media screen and (max-width: 900px) {
+  
+  .nav {
+        width: 90%;
+        margin: 0 auto;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .list__item{
+        padding: 3px 0;
+    }
+
+
+    a{
+        text-decoration: none;
+    }
+
+    .play {
+        background-color: #ff6400;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+    }
+
+    .logo-logo {
+        width: 90%;
+    }
 }
 </style>
 

@@ -35,9 +35,7 @@
 @media screen and (max-width: 900px) {
 
 .darkeningOfTheBackground {
-    padding: 100px 0;
     text-align: center;
-    height: 120vh;
     background-color: #02023b36;
     display: flex;
     flex-direction: column;
