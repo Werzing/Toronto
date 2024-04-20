@@ -4,7 +4,7 @@
 
 
       <template v-slot:vidioBg>
-        <video class="vidioBg" src="/video/F2P_Trailer.mp4" muted autoplay></video>
+        <video class="vidioBg" src="/video/F2P_Trailer.mp4" poster="/img/Lijang_Tower_Capture_the_Flag.webp"  muted autoplay></video>
       </template>
 
 
