@@ -184,7 +184,7 @@ export default {
 
 
 <style scoped>
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 
     .swiper {
         width: 100%;
@@ -224,6 +224,48 @@ export default {
     .slider__img {
         width: 92%;
     }
+}
+
+@media screen and (max-width:1199px) and (min-width:901px) {
+    .swiper {
+        width: 100%;
+        user-select: none;
+    }
+
+
+    .slider {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        padding-top: 20px;
+    }
+
+    .slider__text {
+        font-size: 19px;
+        width: 90%;
+        padding-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 20pt;
+    }
+
+    p {
+        font-size: 14pt;
+    }
+
+    .slider__img {
+        width: 92%;
+    }
+    
 }
 
 @media screen and (max-width: 900px) {

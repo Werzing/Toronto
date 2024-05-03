@@ -6,7 +6,7 @@
         </div>
 
 
-        <div class="bg" :style="{backgroundImage: `url(../img/${bg})`}">
+        <div class="bg" :style="{ backgroundImage: `url(../img/${bg})` }">
             <slot name="skils"></slot>
 
         </div>
@@ -20,18 +20,32 @@
 
 
 <style>
-*{
-    color:white;
+* {
+    color: white;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 
-.bg{
-    background-size: cover; 
-    background-position: center; 
+    .bg {
+        background-size: cover;
+        background-position: center;
+    }
+
+
 }
 
+@media screen and (max-width:1199px) and (min-width:901px) {
+    .bg {
+        background-size: cover;
+        background-position-x: -900px;
+    }
+}
 
+@media screen and (max-width:900px) {
+    .bg {
+        background-size: cover;
+        background-position-x: -900px;
+    }
 }
 </style>
 
@@ -44,7 +58,7 @@
 <script>
 
 export default {
-    props: ["bgdescription","bg"],
+    props: ["bgdescription", "bg"],
 
 };
 

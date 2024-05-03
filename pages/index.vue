@@ -106,7 +106,7 @@
 
 
 <style>
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 
   .vidioBg {
     width: 100%;
@@ -192,6 +192,97 @@
     padding: 120px 0;
   }
 }
+
+@media screen and (max-width: 1199px) and (min-width:901px) {
+
+  .vidioBg {
+    height: 100%;
+    position: relative;
+    left: -150px;
+  }
+
+  .video {
+    width: 80%;
+    border-radius: 30px;
+    border: 4px solid rgb(190, 190, 190);
+  }
+
+  .wrap2 {
+    width:900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .seson9-text {
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 80%;
+  }
+
+
+  .index__text-h3 {
+    line-height: 32px;
+    font-size: 20pt;
+  }
+
+  .index__text-p {
+    line-height: 32px;
+    font-size: 14pt;
+  }
+
+
+  .bg__text-h3 {
+    line-height: 32px;
+    font-size: 25pt;
+  }
+
+  .bg__text-p {
+    line-height: 32px;
+    font-size: 14pt;
+  }
+
+
+  .section3 {
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 120px 0;
+  }
+
+  .section3__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+
+
+
+  .section2 {
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding: 120px 0;
+  }
+  
+}
+
 
 @media screen and (max-width: 900px) {
 

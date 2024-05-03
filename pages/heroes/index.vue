@@ -56,7 +56,7 @@
 
 
 <style scoped>
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 
   nav a {
     text-decoration: none;
@@ -155,21 +155,114 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1199px) and (min-width: 901px) {
 
-  nav a button{
+  nav a {
     text-decoration: none;
     color: white;
   }
 
 
+
+  .preloader__cat {
+    width: 70px;
+    height: 70px;
+
+  }
+
+  .preloader__footer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .play {
+    padding: 13px 25px;
+    background-color: #ff6400;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+  .play:hover {
+    transform: scale(110%);
+  }
+
+  .navbar_scrolled {
+    width: 100vw;
+    /* padding: 20px 0; */
+    position: fixed;
+    background-color: rgba(60, 71, 68, 0.976);
+    animation-name: fadeInUp;
+    animation-direction: 1s;
+    animation-fill-mode: none;
+    transition: 0.3s;
+    z-index: 9999;
+  }
+
+
   .nav {
-    width: 90%;
-    margin: 0 auto;
-    height: 20%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .logo-box {
+    float: left;
+    margin-left: 25px;
+    padding: 8px 0;
+
+  }
+
+  .logo {
+    margin: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav,
+  .nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .nav__list {
+    width: 60%;
+    justify-content: space-around;
+  }
+
+  .list__item {
+    margin-right: 20px;
+    font-size: 14pt;
+    transition: 200ms;
+  }
+
+  .list__item:hover {
+    transform: scale(110%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
+
   }
 
   .nav__list {
@@ -199,6 +292,20 @@
 
   .logo-logo {
     width: 90%;
+  }
+
+  .middle {
+    width: 180%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+
+  .play-free {
+    font-size: 15pt;
   }
 }
 </style>

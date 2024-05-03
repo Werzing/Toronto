@@ -8,10 +8,9 @@
 
     <div class="wrap cards">
 
-      <NuxtLink class="heroe__card" :href="`/heroes/${heroe.id}`" v-for="heroe in heroes"
-        :key="heroe.id">
+      <NuxtLink class="heroe__card" :href="`/heroes/${heroe.id}`" v-for="heroe in heroes" :key="heroe.id">
         <div class="heroe__img"><img class="heroe__img" :src="`${heroe.NameImg}`" alt=""></div>
-        <div class="heroe__description"><img :src="`${heroe.RoleImg}`" alt=""> {{ heroe.name }}</div>
+        <div class="heroe__description"><img class="roleImg" :src="`${heroe.RoleImg}`" alt=""> <span class="HeroeName">{{ heroe.name }}</span></div>
 
       </NuxtLink>
 
@@ -26,11 +25,11 @@
 
 
 <style scoped>
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 
   .buttons-filter {
     padding: 15px;
-    width: 10%;
+    width: 12%;
     font-size: 16pt;
     border: 3px solid white;
     border-radius: 8px;
@@ -54,7 +53,7 @@
   }
 
   .wrap {
-    width: 1700px;
+    width: 1500px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -103,6 +102,86 @@
 
 }
 
+@media screen and (max-width: 1199px) and (min-width:901px) {
+  .roleImg {
+    width: 20px;
+  }
+
+
+  .buttons-filter {
+    padding: 15px;
+    width: 15%;
+    font-size: 10pt;
+    border: 3px solid white;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+  }
+
+  .buttons-filter:hover {
+    transform: scale(110%);
+
+  }
+
+  .cards {
+    padding: 20px 0 50px 0;
+  }
+
+  .buttons {
+    padding: 120px 0 20px 0;
+  }
+
+  .wrap {
+    width: 910px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .heroe__card {
+    width: 14%;
+    border: 4px solid white;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(18, 21, 36, 1) 0%, rgba(36, 42, 66, 1) 50%, rgba(18, 21, 36, 1) 100%);
+    transition: 200ms;
+    overflow: hidden;
+
+  }
+
+
+  .heroe__card:hover {
+
+    transform: scale(110%);
+  }
+
+
+  .heroe__img {
+    width: 100%;
+  }
+
+  .heroe__description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+
+
+  a,
+  li,
+  ul {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+}
+
 @media screen and (max-width: 900px) {
 
   .buttons-filter {
@@ -120,7 +199,7 @@
 
 
   .buttons {
-    padding: 60px 0 20px 0;
+    margin: 100px 0 0 0;
   }
 
   .wrap {
@@ -129,7 +208,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 18px;
   }
 
   .heroe__card {
@@ -163,15 +242,15 @@
     color: white;
   }
 
-  .heroeBG{
+  .heroeBG {
     background: url(/img/heroeBG.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 110px;
     padding: 90px 20px;
   }
 
 }
-
-
 </style>
 
 

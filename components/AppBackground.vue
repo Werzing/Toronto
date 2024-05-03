@@ -15,7 +15,7 @@
     color: white;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 
 .darkeningOfTheBackground {
     height: 100%;
@@ -31,6 +31,9 @@
 
 }
 
+@media  screen and (max-width:1199px) and (min-width: 901px) {
+    
+}
 
 @media screen and (max-width: 900px) {
 
