@@ -246,7 +246,7 @@
     background: url(/img/heroeBG.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position-y: 110px;
+    background-position-y: 139px;
     padding: 90px 20px;
   }
 
