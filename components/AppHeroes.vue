@@ -244,7 +244,7 @@
 
   .heroeBG {
     background: url(/img/heroeBG.jpg);
-    background-size: auto;
+    background-size:cover;
     background-attachment: fixed;
     background-position-y: 120px;
     padding: 90px 20px;
